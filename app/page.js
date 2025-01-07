@@ -1,11 +1,13 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Header from './_components/Header';
+import HeroSection from './_components/HeroSection';
 
 export default function Home() {
   return (
     <div>
-      <h2>Chillar Charcha</h2>
-      <Button variant='outline'>Hello World!</Button>
+      <Header />
+      <HeroSection />
     </div>
   );
 }
