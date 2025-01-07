@@ -2,11 +2,7 @@ import React from 'react';
 import { UserButton } from '@clerk/nextjs';
 
 function Dashboard() {
-  return (
-    <div>
-      <UserButton />
-    </div>
-  );
+  return <div>Dashboard</div>;
 }
 
 export default Dashboard;
