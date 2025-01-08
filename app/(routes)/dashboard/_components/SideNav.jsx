@@ -29,8 +29,8 @@ function SideNav() {
   ];
   const path = usePathname();
   return (
-    <div className='h-screen p-5 border shadow-sm'>
-      <Image src={'./logo.svg'} alt='logo' width={160} height={100} />
+    <div className='h-screen p-5 border shadow-sm flex flex-col'>
+      <Image src={'./logo.svg'} alt='logo' width={100} height={100} className='self-center' />
       <div className='mt-5'>
         {menuList.map((menu, index) => (
           <Link href={menu.path}>
