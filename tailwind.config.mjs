@@ -55,6 +55,15 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      keyframes: {
+        flip: {
+          '0%, 100%': { transform: 'rotateY(0)' },
+          '50%': { transform: 'rotateY(180deg)' },
+        },
+      },
+      animation: {
+        flip: 'flip 0.6s ease-in-out',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

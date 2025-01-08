@@ -33,7 +33,7 @@ function SideNav() {
       <Image src={'./logo.svg'} alt='logo' width={100} height={100} className='self-center' />
       <div className='mt-5'>
         {menuList.map((menu, index) => (
-          <Link href={menu.path}>
+          <Link href={menu.path} key={`menu-${menu.id}`}>
             <h2
               key={`menuItem - ${index}`}
               className={`flex gap-2 items-center text-gray-500 font-medium mb-2
@@ -46,7 +46,7 @@ function SideNav() {
           </Link>
         ))}
       </div>
-      <div className='fixed bottom-10 p-5 flex gap-2 items-center'>
+      <div className='fixed bottom-10 p-5 flex gap-2 items-center text-md'>
         <UserButton /> Profile
       </div>
     </div>
